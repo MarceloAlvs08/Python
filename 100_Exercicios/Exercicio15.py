@@ -1,5 +1,5 @@
 
-
+### Exercicio 15 - Custo final da compra ###
 
 preco = float(input("Preço unitário: R$ "))
 quantidade_item = int(input("Quantidade: "))
