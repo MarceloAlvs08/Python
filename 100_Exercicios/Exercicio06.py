@@ -1,4 +1,5 @@
 
+### Exercicio 06 - Área e perimetro do retângulo ###
 
 largura = float(input("Informe a largura: "))
 altura = float(input("Informe a altura: "))
