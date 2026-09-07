@@ -1,0 +1,162 @@
+-- 1. Criação e Seleção do Banco de Dados
+IF NOT EXISTS (SELECT name FROM sys.databases WHERE name = 'EMPRESA')
+BEGIN
+    CREATE DATABASE EMPRESA;
+END;
+GO
+
+USE EMPRESA;
+GO
+
+-- ============================================================
+-- 2. CRIAÇÃO DAS TABELAS
+-- ============================================================
+
+-- Tabela: DEPARTAMENTO
+CREATE TABLE DEPARTAMENTO (
+    DNumero INT NOT NULL,
+    DNome VARCHAR(50) NOT NULL,
+    Gerente_CPF VARCHAR(11) NULL,
+    DataInicioGerente DATE NULL,
+    CONSTRAINT PK_DEPARTAMENTO PRIMARY KEY (DNumero)
+);
+GO
+
+-- Tabela: FUNCIONARIO
+CREATE TABLE FUNCIONARIO (
+    CPF VARCHAR(11) NOT NULL,
+    PNome VARCHAR(50) NOT NULL,
+    SNome VARCHAR(50) NOT NULL,
+    DataNasc DATE NULL,
+    Salario DECIMAL(10,2) NULL,
+    DNR INT NULL,
+    Supervisor_CPF VARCHAR(11) NULL,
+    CONSTRAINT PK_FUNCIONARIO PRIMARY KEY (CPF)
+);
+GO
+
+-- Tabela: PROJETO
+CREATE TABLE PROJETO (
+    PNumero INT NOT NULL,
+    PNome VARCHAR(100) NOT NULL,
+    Localizacao VARCHAR(100) NULL,
+    DNum INT NULL,
+    CONSTRAINT PK_PROJETO PRIMARY KEY (PNumero)
+);
+GO
+
+-- Tabela: TRABALHA_EM
+CREATE TABLE TRABALHA_EM (
+    F_CPF VARCHAR(11) NOT NULL,
+    P_Numero INT NOT NULL,
+    Horas DECIMAL(5,2) NULL,
+    CONSTRAINT PK_TRABALHA_EM PRIMARY KEY (F_CPF, P_Numero)
+);
+GO
+
+-- ============================================================
+-- 3. ADIÇÃO DAS CHAVES ESTRANGEIRAS (FOREIGN KEYS)
+-- ============================================================
+
+-- Relacionamento: FUNCIONARIO -> DEPARTAMENTO (Pertence ao departamento - DNR)
+ALTER TABLE FUNCIONARIO
+ADD CONSTRAINT FK_FUNCIONARIO_DEPARTAMENTO
+FOREIGN KEY (DNR) REFERENCES DEPARTAMENTO(DNumero);
+GO
+
+-- Relacionamento: FUNCIONARIO -> FUNCIONARIO (Auto-relacionamento de Supervisão)
+ALTER TABLE FUNCIONARIO
+ADD CONSTRAINT FK_FUNCIONARIO_SUPERVISOR
+FOREIGN KEY (Supervisor_CPF) REFERENCES FUNCIONARIO(CPF);
+GO
+
+-- Relacionamento: DEPARTAMENTO -> FUNCIONARIO (Gerente do departamento)
+ALTER TABLE DEPARTAMENTO
+ADD CONSTRAINT FK_DEPARTAMENTO_GERENTE
+FOREIGN KEY (Gerente_CPF) REFERENCES FUNCIONARIO(CPF);
+GO
+
+-- Relacionamento: PROJETO -> DEPARTAMENTO (Departamento responsável)
+ALTER TABLE PROJETO
+ADD CONSTRAINT FK_PROJETO_DEPARTAMENTO
+FOREIGN KEY (DNum) REFERENCES DEPARTAMENTO(DNumero);
+GO
+
+-- Relacionamento: TRABALHA_EM -> FUNCIONARIO (CPF do funcionário alocado)
+ALTER TABLE TRABALHA_EM
+ADD CONSTRAINT FK_TRABALHA_EM_FUNCIONARIO
+FOREIGN KEY (F_CPF) REFERENCES FUNCIONARIO(CPF);
+GO
+
+-- Relacionamento: TRABALHA_EM -> PROJETO (Número do projeto)
+ALTER TABLE TRABALHA_EM
+ADD CONSTRAINT FK_TRABALHA_EM_PROJETO
+FOREIGN KEY (P_Numero) REFERENCES PROJETO(PNumero);
+GO
+
+select * from DEPARTAMENTO
+select * from DEPARTAMENTO
+
+select * from DEPARTAMENTO
+-- INSERINDO OS DADOS NA TABELA DEPARTAMENTO
+-- INSERINDO SEM INFORMAR OS CAMPOS
+insert into DEPARTAMENTO
+values(1,'TECNOLOGIA',NULL,NULL)
+
+--INSERINDO ESPECIFICAR A COLUNA
+INSERT INTO DEPARTAMENTO (DNUMERO,DNOME)
+VALUES(2,'RECURSOS HUMANOS')
+
+--INSERINDO DIVERSOS REGISTROS DE UMA UNICA VEZ
+INSERT INTO DEPARTAMENTO (DNumero, DNome, Gerente_CPF, DataInicioGerente) VALUES
+(3,  'Financeiro e Contabilidade',   NULL, NULL),
+(4,  'Vendas e Comercial',           NULL, NULL),
+(5,  'Marketing e Comunicação',      NULL, NULL),
+(6,  'Pesquisa e Desenvolvimento',   NULL, NULL),
+(7,  'Logística e Suprimentos',      NULL, NULL),
+(8,  'Jurídico e Compliance',        NULL, NULL),
+(9,  'Atendimento ao Cliente',       NULL, NULL),
+(10, 'Operações e Produção',         NULL, NULL),
+(11, 'Segurança da Informação',      NULL, NULL),
+(12, 'Engenharia de Produto',        NULL, NULL),
+(13, 'Garantia de Qualidade',        NULL, NULL),
+(14, 'Compras e Procurement',        NULL, NULL),
+(15, 'Treinamento e Capacitação',    NULL, NULL),
+(16, 'Estratégia e Inovação',        NULL, NULL),
+(17, 'Manutenção e Infraestrutura',  NULL, NULL),
+(18, 'Relações Internacionais',      NULL, NULL),
+(19, 'Responsabilidade Social',      NULL, NULL),
+(20, 'Controladoria e Auditoria',    NULL, NULL);
+
+SELECT * FROM DEPARTAMENTO
+
+--ALTERAR UM REGISTRO
+UPDATE DEPARTAMENTO
+SET DATAINICIOGERENTE = GETDATE()
+
+UPDATE DEPARTAMENTO
+SET DNOME = 'AUDITORIA'
+WHERE DNUMERO = 20
+
+SELECT * FROM DEPARTAMENTO
+
+--ELIMINAR UM REGISTRO
+DELETE FROM DEPARTAMENTO
+WHERE DNUMERO = 20
+
+SELECT * FROM DEPARTAMENTO
+
+--FUNCIONARIO
+SELECT * FROM FUNCIONARIO
+
+INSERT INTO FUNCIONARIO VALUES
+('12','PRIMEIRO','SOBRENOME',
+'2000-01-01',1234.56,15,NULL)
+
+--INSERINDO COM SELECT
+INSERT INTO FUNCIONARIO
+SELECT TOP 1 'CPF12','PNOME','SNOME',
+'2001-01-01',999.99,DNUMERO, NULL
+FROM DEPARTAMENTO
+
+SELECT * FROM FUNCIONARIO
