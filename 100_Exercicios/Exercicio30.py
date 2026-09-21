@@ -9,8 +9,8 @@ prazo = int(input("Informe o prazo: "))
 prestacao = valor_imovel / (prazo * 12)
 limite = salario * 0.30
 
-limite_formatado = f"{limite:.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
-prestacao_formatada = f"{prestacao:.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
+limite_formatado = f"{limite:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
+prestacao_formatada = f"{prestacao:,.2f}".replace(',', 'X').replace('.', ',').replace('X', '.')
 
 print(f"Prestação: R$ {prestacao_formatada}")
 print(f"Limite: R$ {limite_formatado}")
