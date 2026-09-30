@@ -1,5 +1,8 @@
-# Exercicio 18 - Maior de dois números
-    # Leia dois números reais e mostra qual deles é o maior. Se os valores forem iguais, informe que não existe maior.
+print("=" * 60)
+print("Exercicio 18 - Maior de dois números.")
+print("Enunciado: Leia dois números reais e mostra qual deles é o maior. Se os valores forem iguais, informe que não existe maior.")
+print("=" * 60)
+print()
 
 primeiro_valor = int(input("Digite um número: "))
 segundo_valor = int(input("Digite um número: "))
