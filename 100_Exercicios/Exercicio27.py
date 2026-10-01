@@ -1,6 +1,8 @@
-# Exercicio 27 - Classificação de IMC
-    # Leia o peso em quilogramas e a altura em metros. Calcule o IMC e classifique o resultado usando apenas as regras didaticas da tabela.
-
+print("=" * 60)
+print("Exercicio 27 - Classificação de IMC.")
+print("Leia o peso em quilogramas e a altura em metros. Calcule o IMC e classifique o resultado usando apenas as regras didaticas da tabela.")
+print("=" * 60)
+print()
 
 peso = float(input("Informe seu peso: ").replace(',', '.'))
 altura = float(input("Informe sua altura: ").replace(',', '.'))
