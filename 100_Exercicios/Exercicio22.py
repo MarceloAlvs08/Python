@@ -1,5 +1,8 @@
-# Exercicio 22 - Situação do aluno por faixa
-    # Leia duas notas, calcule a média e informe a situação do aluno conforme a tabela.
+print("=" *60)
+print("Exercicio 22 - Situação do aluno por faixa.")
+print("Leia duas notas, calcule a média e informe a situação do aluno conforme a tabela.")
+print("=" * 60)
+print()
 
 nota_01 = float(input("Digite a primeira nota do aluno: ").replace(',', '.'))
 nota_02 = float(input("Digite a segunda nota do aluno: ").replace(',', '.'))

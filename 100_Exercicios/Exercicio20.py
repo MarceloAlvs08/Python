@@ -1,5 +1,9 @@
-# Exercicio 20 - Trẽs valores em ordem crescente.
-    # Leia três números inteiros e mostre os valores em ordem crescente.
+print("=" * 60)
+print("Exercicio 20 - Trẽs valores em ordem crescente.")
+print("Leia três números inteiros e mostre os valores em ordem crescente.")
+print("=" * 60)
+print( "=" * 60)
+print()
 
 
 valor1 = int(input("Digite o primeiro valor: "))

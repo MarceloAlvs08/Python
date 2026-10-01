@@ -1,5 +1,8 @@
-# Exercicio 19 - Maior e menor de três números
-    # Leia três números reais e mostre o maior e o menor valor informado.
+print("=" * 60)
+print("Exercicio 19 - Maior e menor de três números.")
+print("Enunciado: Leia três números reais e mostre o maior e o menor valor informado.")
+print("=" * 60)
+print()
 
 a = int(input("Informe o primeiro valor: "))
 b = int(input("Informe o segundo valor: "))

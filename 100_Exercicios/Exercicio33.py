@@ -1,6 +1,9 @@
-# Exercicio 33 - Dia da semana.
-    # Leia um número de 1 a 7 e mostre o dia da semana correspondente.
-    # Para quando outro valor, mostre OPÇÃO INVÁLIDA.
+print("=" * 60)
+print("Exercicio 33 - Dia da semana.")
+print("Leia um número de 1 a 7 e mostre o dia da semana correspondente.")
+print("Para quando outro valor, mostre OPÇÃO INVÁLIDA.")
+print("=" * 60)
+print()
 
 numero = int(input("Digite um número: "))
 

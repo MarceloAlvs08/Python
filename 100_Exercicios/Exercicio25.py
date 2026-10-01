@@ -1,5 +1,8 @@
-# Exercicio 25 - Preço conforme a forma de pagamento
-    # Leia o preço de um produto e a opção de pagamento. Calcule e mostre o valor final conforme a tabela.
+print("=" * 60)
+print("Exercicio 25 - Preço conforme a forma de pagamento.")
+print("Leia o preço de um produto e a opção de pagamento. Calcule e mostre o valor final conforme a tabela.")
+print("=" * 60)
+print()
 
 preco = float(input("Digite o preço: R$ ").replace(',', '.'))
 opcao = int (input("Digite a opção: "))

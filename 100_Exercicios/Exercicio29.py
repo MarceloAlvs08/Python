@@ -1,6 +1,9 @@
-# Exercicio 29 - Tipo de triângulo
-    # Leia trẽs medidas. Primeiro verifique se elas formam um triângulo.
-    # Se formarem, classifique-o como equilátero, isósceles ou escaleno.
+print("=" * 60)
+print("Exercicio 29 - Tipo de triângulo.")
+print("Leia trẽs medidas. Primeiro verifique se elas formam um triângulo.")
+print("Se formarem, classifique-o como equilátero, isósceles ou escaleno.")
+print("=" * 60)
+print()
 
 n1 = int(input("Digite um número: "))
 n2 = int(input("Digite um número: "))

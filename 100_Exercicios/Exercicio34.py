@@ -1,5 +1,8 @@
-# Exercicio 34 - Quantidade de dias do mês
-    # Leia o número de um mês e um ano. Mostre quantos dias o mês possui.
+print("=" * 60)
+print("Exercicio 34 - Quantidade de dias do mês.")
+print("Leia o número de um mês e um ano. Mostre quantos dias o mês possui.")
+print("=" * 60)
+print()
 
 mes = int(input("Digite o mês (númerico): "))
 ano = int(input("Digite o ano: "))

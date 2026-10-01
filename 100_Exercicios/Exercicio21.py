@@ -1,5 +1,8 @@
-# Exercicio 21 - Aprovado ou reprovado
-    # Leia duas notas, calcule a média e informe se o aluno foi aprovado ou reprovado.
+print("=" * 60)
+print("Exercicio 21 - Aprovado ou reprovado.")
+print("Leia duas notas, calcule a média e informe se o aluno foi aprovado ou reprovado.")
+print("=" * 60)
+print()
 
 nota_01 = float(input("Digite a primeira nota: ").replace(',', '.'))
 nota_02 = float(input("Digite a segunda nota: ").replace(',', '.'))

@@ -1,6 +1,9 @@
-# Exercicio 30 - Aprovação de emprestimo
-    # Leia o valor de um imóvel, o salário mensal do comprador e o prazo de pagamento em anos.
-    # Calcule a prestação mensal e informe se o empréstimo foi aprovado.
+print("=" * 60)
+print("Exercicio 30 - Aprovação de emprestimo.")
+print("Leia o valor de um imóvel, o salário mensal do comprador e o prazo de pagamento em anos.")
+print("Calcule a prestação mensal e informe se o empréstimo foi aprovado.")
+print("=" * 60)
+print()
 
 valor_imovel = float(input("Informe o valor do imóvel: R$ ").replace(',', '.'))
 salario = float(input("Informe o salário: R$ ").replace(',', '.'))

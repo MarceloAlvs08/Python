@@ -1,5 +1,8 @@
-# Exercicio 31 - Divisel por 3 e por 5
-    # Leia um número inteiro e informe em qual situação ele se encontra.
+print("=" * 60)
+print("Exercicio 31 - Divisel por 3 e por 5.")
+print("Leia um número inteiro e informe em qual situação ele se encontra.")
+print("=" * 60)
+print()
 
 numero = int(input("Digite um número: "))
 

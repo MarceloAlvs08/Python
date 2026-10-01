@@ -1,5 +1,8 @@
-# Exercicio 26 - Reajuste por faixa salarial
-    # Leia o salário atual e calcule o novo
+print("=" * 60)
+print("Exercicio 26 - Reajuste por faixa salarial.")
+print("Leia o salário atual e calcule o novo.")
+print("=" * 60)
+print()
 
 salario = float(input("Salário atual: R$ ").replace(',', '.'))
 
