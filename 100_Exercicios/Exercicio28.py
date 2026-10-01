@@ -14,5 +14,5 @@ else:
  print("Não formam um triangulo")
 
 
-
+print()
 input("Pressione ENTER para sair...")

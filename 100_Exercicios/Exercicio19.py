@@ -26,7 +26,7 @@ if c < menor:
 print(f"Maior: {maior}")
 print(f"Menor: {menor}")
 
-
+print()
 input("Pressione ENTER para sair...")
 
 

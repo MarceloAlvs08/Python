@@ -22,6 +22,6 @@ print(f"Reajuste salárial: {reajuste_salarial}")
 print(f"Novo salário: R$ {valor_formatado}")
 
 
-
+print()
 input("Pressione ENTER para sair...")
 

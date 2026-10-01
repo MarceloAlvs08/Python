@@ -24,5 +24,5 @@ print(f"IMC: {valor_formatado}")
 print(f"Classificação: {classificacao_esperada}")
 
 
-
+print()
 input("Pressione ENTER para sair...")

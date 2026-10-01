@@ -26,5 +26,5 @@ print(f"Forma de pagamento: {forma_pagamento}")
 print(f"Valor final: R$ {valor_formatado}")
 
 
-
+print()
 input("Pressione ENTER para sair...")

@@ -21,4 +21,5 @@ else:
     print("Aluno aprovado")
     
 
+print()
 input("Pressione ENTER para sair...")

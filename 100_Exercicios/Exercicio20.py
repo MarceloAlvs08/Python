@@ -30,5 +30,5 @@ print(f"Valores originais (Antes):  {v1_orig}, {v2_orig}, {v3_orig}")
 print(f"Valores ordenados (Depois): {valor1}, {valor2}, {valor3}")
 
 
-    
+print()  
 input("Pressione ENTER para sair...")

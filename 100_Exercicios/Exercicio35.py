@@ -25,4 +25,6 @@ else:
     print(f"Valor normal: R$ {valor_formatado2}")
 
 
-    input("Pressione ENTER para sair...")
+
+print()
+input("Pressione ENTER para sair...")

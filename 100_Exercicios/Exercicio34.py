@@ -22,4 +22,5 @@ else:
 
 
 
+print()
 input("Pressione ENTER para sair...")

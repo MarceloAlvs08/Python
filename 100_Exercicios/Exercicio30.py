@@ -24,5 +24,5 @@ else:
     print("Negado")
 
 
-
+print()
 input("Pressione ENTER para sair...")

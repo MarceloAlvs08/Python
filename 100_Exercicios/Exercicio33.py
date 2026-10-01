@@ -27,4 +27,5 @@ else:
 
 
 
-    input("Pressione ENTER para sair...")
+print()
+input("Pressione ENTER para sair...")

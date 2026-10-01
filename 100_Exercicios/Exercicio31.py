@@ -16,7 +16,7 @@ else:
     print("Por nenhum")
     
 
-
+print()
 input("Pressione ENTER para sair...")
 
 
