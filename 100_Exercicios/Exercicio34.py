@@ -20,3 +20,6 @@ elif mes == 2:
 else:
     print("Mês inválido: ")
 
+
+
+input("Pressione ENTER para sair...")

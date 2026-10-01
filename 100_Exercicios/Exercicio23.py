@@ -15,3 +15,6 @@ elif idade <= 69:
 elif idade >= 70:
     print("Voto opcional")
     
+
+
+input("Pressione ENTER para sair...")

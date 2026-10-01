@@ -27,6 +27,8 @@ print(f"Maior: {maior}")
 print(f"Menor: {menor}")
 
 
+input("Pressione ENTER para sair...")
+
 
 
 

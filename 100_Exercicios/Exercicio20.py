@@ -31,3 +31,4 @@ print(f"Valores ordenados (Depois): {valor1}, {valor2}, {valor3}")
 
 
     
+input("Pressione ENTER para sair...")

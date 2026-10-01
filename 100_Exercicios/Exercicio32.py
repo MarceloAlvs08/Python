@@ -11,3 +11,6 @@ if numero >= 10 and numero <= 20:
 else:
     print("Fora")
 
+
+
+input("Pressione ENTER para sair...")

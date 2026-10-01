@@ -24,4 +24,7 @@ elif numero == 1:
     print("Domingo")
 else:
     print("Opção inválida")
-    
+
+
+
+    input("Pressione ENTER para sair...")

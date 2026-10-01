@@ -25,3 +25,6 @@ valor_formatado = f"{valor_final:.2f}".replace('.', ',')
 print(f"Forma de pagamento: {forma_pagamento}")
 print(f"Valor final: R$ {valor_formatado}")
 
+
+
+input("Pressione ENTER para sair...")

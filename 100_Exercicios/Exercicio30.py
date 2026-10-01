@@ -23,3 +23,6 @@ if prestacao <= limite:
 else:
     print("Negado")
 
+
+
+input("Pressione ENTER para sair...")

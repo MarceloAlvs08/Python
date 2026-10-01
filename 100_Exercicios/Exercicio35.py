@@ -23,3 +23,6 @@ if estudante == 'sim' or idade < 12 or idade >= 60:
     print(f"Valor meia entrada: R$ {valor_formatado}")
 else:
     print(f"Valor normal: R$ {valor_formatado2}")
+
+
+    input("Pressione ENTER para sair...")

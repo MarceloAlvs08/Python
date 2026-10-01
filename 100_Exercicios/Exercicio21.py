@@ -17,3 +17,6 @@ if media >= 7:
     print("Aluno aprovado")
 else:
     print("Aluno reprovado")
+
+
+input("Pressione ENTER para sair...")

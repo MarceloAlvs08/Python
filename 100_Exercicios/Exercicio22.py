@@ -20,3 +20,5 @@ elif media >= 5 and media < 7:
 else:
     print("Aluno aprovado")
     
+
+input("Pressione ENTER para sair...")
